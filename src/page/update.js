@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Input, Label, Button, Media } from "reactstrap";
 import api from "../services/api";
 import pic from "../asset/icons8-user-50.png";
+import { BsCloudUploadFill } from "react-icons/bs";
 
 const Update = () => {
   const id = useParams();
@@ -92,7 +93,7 @@ const Update = () => {
                 name="imagem"
               />
               <Label style={{ fontSize: "20px" }} for="image">
-                Carregar
+                <BsCloudUploadFill size={30} />
               </Label>
             </Button>
           </div>
